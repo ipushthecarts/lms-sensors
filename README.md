@@ -16,14 +16,15 @@ This script monitors CPU temperatures using `lm-sensors` and suspends non-kernel
 Run the following commands to install required packages:
 
 
-sudo apt update && sudo apt install lm-sensors sendmail curl python3-pip
+```sudo apt update && sudo apt install lm-sensors sendmail curl python3-pip
 pip install psutil
 Step 2: Enable lm-sensors
 bash
 sudo sensors-detect
+```
 Follow the prompts to detect CPU temperature sensors.
 
-Step 3: Download the Script
+### **Step 3: Download the Script**
 Clone this repository and copy lms_monitor.py to the /usr/local/bin/ directory:
 
 ```bash
@@ -33,7 +34,7 @@ sudo cp lms_monitor.py /usr/local/bin/lms_monitor.py
 sudo chmod +x /usr/local/bin/lms_monitor.py
 ```
 
-Step 4: Create the Start Command
+### **Step 4: Create the Start Command**
 Make a simple command called lms-start to launch the monitor:
 
 ```bash
@@ -41,7 +42,7 @@ echo -e '#!/bin/bash\n/usr/bin/env python3 /usr/local/bin/lms_monitor.py' | sudo
 sudo chmod +x /usr/local/bin/lms-start
 ```
 
-Step 5: Create the Stop Command
+### **Step 5: Create the Stop Command**
 Make a command called lms-stop to stop the monitor:
 
 ```bash
