@@ -79,8 +79,8 @@ Usage
 Starting the Monitor
 Run:
 
-```bash
-lms-start```
+```bash```
+```lms-start ```
 You'll be prompted with two questions:
 
 "Whats the temp you want non-kernal programs to pause?"
