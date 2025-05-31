@@ -44,10 +44,10 @@ sudo chmod +x /usr/local/bin/lms-start
 Step 5: Create the Stop Command
 Make a command called lms-stop to stop the monitor:
 
-``bash
+```bash
 echo -e '#!/bin/bash\nif [ -f /tmp/lms_monitor.pid ]; then\n  PID=$(cat /tmp/lms_monitor.pid)\n  echo "Stopping lms_monitor process with PID $PID"\n  kill $PID\n  sleep 2\n  rm -f /tmp/lms_monitor.pid\nelse\n  echo "lms_monitor is not running."\nfi' | sudo tee /usr/local/bin/lms-stop
-sudo chmod +x /usr/local/bin/lms-stop``
-
+sudo chmod +x /usr/local/bin/lms-stop
+```
 
 Customization Guide
 Changing Email and SMS Recipient
