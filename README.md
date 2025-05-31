@@ -26,20 +26,20 @@ Follow the prompts to detect CPU temperature sensors.
 Step 3: Download the Script
 Clone this repository and copy lms_monitor.py to the /usr/local/bin/ directory:
 
-``bash
+```bash
 git clone https://github.com/YOUR_GITHUB_REPO_NAME.git
 cd YOUR_GITHUB_REPO_NAME
 sudo cp lms_monitor.py /usr/local/bin/lms_monitor.py
-sudo chmod +x /usr/local/bin/lms_monitor.py``
-
+sudo chmod +x /usr/local/bin/lms_monitor.py
+```
 
 Step 4: Create the Start Command
 Make a simple command called lms-start to launch the monitor:
 
-``bash
+```bash
 echo -e '#!/bin/bash\n/usr/bin/env python3 /usr/local/bin/lms_monitor.py' | sudo tee /usr/local/bin/lms-start
-sudo chmod +x /usr/local/bin/lms-start``
-
+sudo chmod +x /usr/local/bin/lms-start
+```
 
 Step 5: Create the Stop Command
 Make a command called lms-stop to stop the monitor:
@@ -53,10 +53,11 @@ Customization Guide
 Changing Email and SMS Recipient
 Edit the following variables in lms_monitor.py:
 
-``python
+```python
 EMAIL_TO = "your_email@example.com"  # Change this to your alert email
 SMS_TO = "your_phone_number@carrier_email.com"  # Change this to your SMS gateway address
-EMAIL_FROM = "yourserver@example.com"  # Sender email (modify if necessary)``
+EMAIL_FROM = "yourserver@example.com"  # Sender email (modify if necessary)
+```
 Where do I find my SMS-to-email address? Each carrier has an SMS-to-email gateway that lets you send text messages via email. Use the format:
 
 
