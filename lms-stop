@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ -f /tmp/lms_monitor.pid ]; then
+  PID=$(cat /tmp/lms_monitor.pid)
+  echo "Stopping lms_monitor process with PID $PID"
+  kill $PID
+  # Optionally, wait a moment and remove the PID file
+  sleep 2
+  rm -f /tmp/lms_monitor.pid
+else
+  echo "lms_monitor is not running."
+fi
