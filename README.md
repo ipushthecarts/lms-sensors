@@ -50,8 +50,10 @@ echo -e '#!/bin/bash\nif [ -f /tmp/lms_monitor.pid ]; then\n  PID=$(cat /tmp/lms
 sudo chmod +x /usr/local/bin/lms-stop
 ```
 
-Customization Guide
+# **Customization Guide**
+
 Changing Email and SMS Recipient
+
 Edit the following variables in lms_monitor.py:
 
 ```python
