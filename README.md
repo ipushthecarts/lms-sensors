@@ -93,7 +93,9 @@ Run:
 
 ``bash
 lms-stop``
-Testing
+
+#Testing
+
 To test:
 
 Run lms-start with a low threshold (e.g., 10°C) so it triggers quickly.
