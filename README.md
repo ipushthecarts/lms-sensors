@@ -76,7 +76,7 @@ MetroPCS	{YourPhoneNumber}@mymetropcs.com
 Boost Mobile	{YourPhoneNumber}@sms.myboostmobile.com
 For other carriers, check their official documentation.
 
-**Usage**
+# **Usage**
 
 Starting the Monitor
 Run:
@@ -95,7 +95,7 @@ Run:
 ``bash
 lms-stop``
 
-**Testing**
+# **Testing**
 
 To test:
 
